@@ -26,7 +26,7 @@ public class IsoscelesTriangleGeneratorTest {
 
     }
     @Test
-    public void should_print_correct_string_n_is_30() {
+    public void should_print_correct_string_n_is_3() {
         int n=3;
         generator.generate(n);
         verify(printer).print("  *\n ***\n*****\n");

@@ -8,14 +8,14 @@ import static org.junit.Assert.*;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
-public class HorizontalGeneratorTest {
+public class VerticalGeneratorTest {
     private Printer printer;
-    private HorizontalGenerator generator;
+    private VerticalGenerator generator;
 
     @Before
     public void setUp() {
         printer = mock(Printer.class);
-        generator = new HorizontalGenerator(printer);
+        generator = new VerticalGenerator(printer);
     }
 
     @Test
@@ -27,9 +27,9 @@ public class HorizontalGeneratorTest {
     }
     @Test
     public void should_print_correct_string_n_is_30() {
-        int n=30;
+        int n=3;
         generator.generate(n);
-        verify(printer).print("******************************");
+        verify(printer).print("*\n*\n*\n");
 
     }
 }

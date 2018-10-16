@@ -25,4 +25,5 @@ public class printerTest {
         printer.print(inputStr);
         assertThat(outputStream.toString(),is("* **\n"));
     }
+    
 }
